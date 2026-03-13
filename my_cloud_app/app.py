@@ -23,7 +23,6 @@ HTML_TEMPLATE = """
         <p><strong>Сервер:</strong> {{ hostname }}</p>
         <p><strong>Время на сервере:</strong> {{ server_time }}</p>
         <p><strong>Порт:</strong> {{ port }}</p>
-        <p><strong>Режим:</strong> {{ debug_mode }}</p>
     </div>
     <div class="deploy-info">
         <p>Практика по теме: "Развертывание проектов в облаке"</p>
@@ -40,7 +39,6 @@ def index():
         hostname=os.uname().nodename if hasattr(os, 'uname') else 'cloud-server',
         server_time=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         port=os.environ.get("PORT", 5000),
-        debug_mode="Debug выключен (production режим)"
     )
 
 @app.route("/health")
