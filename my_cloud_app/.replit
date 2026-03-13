@@ -1,0 +1,9 @@
+# Конфигурация для Replit
+language = "python3"
+run = "python app.py"
+
+[packager]
+language = "python3"
+
+[unitTest]
+language = "python3"
