@@ -59,20 +59,18 @@ def info():
 
 @app.route("/owner")
 def owner():
-    return {
-        """
+    return render_template_string("""
 <!DOCTYPE html>
 <html>
 <head>
     <title>Информация о влаельце сайта</title>
 </head>
 <body>
-    <h1>🚀 Данный сайт создал SENMART28!</h1>
-    <a href="Мой GitHub">https://github.com/SENMART28</a>
+    <h1>Данный сайт создал SENMART28!</h1>
+    <a href="https://github.com/SENMART28">Мой GitHub</a>
 </body>
 </html>
-"""
-    }
+""")
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
