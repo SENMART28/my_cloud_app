@@ -64,7 +64,7 @@ def owner():
     <title>Информация о влаельце сайта</title>
 </head>
 <body>
-    <h1>Данный сайт создал SENMART28!</h1>
+    <h1>Данный сайт создал SENMART28! (не YaKuts)</h1>
     <a href="https://github.com/SENMART28">Мой GitHub</a>
 </body>
 </html>
