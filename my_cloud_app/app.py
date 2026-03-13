@@ -57,6 +57,23 @@ def info():
         "working_dir": os.getcwd()
     }
 
+@app.route("/owner")
+def owner():
+    return {
+        """
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Информация о влаельце сайта</title>
+</head>
+<body>
+    <h1>🚀 Данный сайт создал SENMART28!</h1>
+    <a href="Мой GitHub">https://github.com/SENMART28</a>
+</body>
+</html>
+"""
+    }
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     debug = os.environ.get("DEBUG", "False").lower() == "true"
